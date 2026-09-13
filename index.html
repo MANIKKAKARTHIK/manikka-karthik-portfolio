@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manikka Karthik M | Web Developer &amp; B.Tech IT Student</title>
+  <meta name="description"
+    content="Manikka Karthik M is a B.Tech Information Technology student and web developer specializing in web development, Python, JavaScript, PHP and cybersecurity." />
+  <meta name="author" content="Manikka Karthik M" />
+  <link rel="canonical" href="https://manikkakarthik.github.io/manikka-karthik-portfolio/" />
+  <link rel="icon" type="image/jpeg" href="profile.jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://manikkakarthik.github.io/manikka-karthik-portfolio/" />
+  <meta property="og:title" content="Manikka Karthik M | Web Developer &amp; B.Tech IT Student" />
+  <meta property="og:description"
+    content="Manikka Karthik M is a B.Tech Information Technology student and web developer specializing in web development, Python, JavaScript, PHP and cybersecurity." />
+  <meta property="og:image" content="https://manikkakarthik.github.io/manikka-karthik-portfolio/profile.jpg" />
+  <meta property="og:image:alt" content="Manikka Karthik M" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manikka Karthik M | Web Developer &amp; B.Tech IT Student" />
+  <meta name="twitter:description"
+    content="Manikka Karthik M is a B.Tech Information Technology student and web developer specializing in web development, Python, JavaScript, PHP and cybersecurity." />
+  <meta name="twitter:image" content="https://manikkakarthik.github.io/manikka-karthik-portfolio/profile.jpg" />
+
+  <!-- JSON-LD Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manikka Karthik M",
+    "url": "https://manikkakarthik.github.io/manikka-karthik-portfolio/",
+    "image": "https://manikkakarthik.github.io/manikka-karthik-portfolio/profile.jpg",
+    "jobTitle": "Web Developer",
+    "description": "B.Tech Information Technology student and web developer specializing in web development, Python, JavaScript, PHP and cybersecurity.",
+    "sameAs": [
+      "https://github.com/MANIKKAKARTHIK",
+      "https://www.linkedin.com/in/manikka-karthik-187862435"
+    ],
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "PHP",
+      "Java",
+      "MySQL",
+      "JDBC",
+      "Full-Stack Web Development",
+      "Cybersecurity"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Manikka Karthik M | Portfolio",
+    "url": "https://manikkakarthik.github.io/manikka-karthik-portfolio/"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div id="root">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-bg-grid"></div>
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <span class="hero-crosshair cross-tl">+</span>
+        <span class="hero-crosshair cross-tr">+</span>
+        <span class="hero-crosshair cross-bl">+</span>
+        <span class="hero-crosshair cross-br">+</span>
+        <div class="hero-hud-left mono reveal" style="--fdelay:.7s; --fx:-25px; --fy:0px">
+        </div>
+        <div class="hero-hud-right mono reveal" style="--fdelay:.7s; --fx:25px; --fy:0px">
+        </div>
+      </div>
+
+      <nav class="navbar reveal" style="--fy:-20px">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero-heading-wrap">
+        <h1 class="hero-title hero-heading reveal" style="--fdelay:.15s; --fy:40px">Manikka Karthik M</h1>
+      </div>
+
+      <div class="portrait-magnet" id="magnet">
+        <div class="reveal" style="--fdelay:.6s; --fy:30px">
+          <div class="avatar-frame">
+            <div class="corner c-tl"></div>
+            <div class="corner c-tr"></div>
+            <div class="corner c-bl"></div>
+            <div class="corner c-br"></div>
+            <div class="avatar-scan"></div>
+            <img src="profile.jpg" alt="Manikka Karthik M" class="avatar-img" width="240" height="240" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <p class="hero-tagline reveal" style="--fdelay:.35s; --fy:20px">Web Developer &amp; B.Tech IT Student specializing in Full-Stack, Python &amp; Cybersecurity</p>
+        <div class="reveal" style="--fdelay:.5s; --fy:20px">
+          <button class="btn-contact">Contact Me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE (skills ticker) -->
+    <section class="marquee-section" id="marquee">
+      <div class="marquee-rows">
+        <div class="marquee-row" id="row1"></div>
+        <div class="marquee-row" id="row2"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <svg class="corner-deco corner-tl reveal" style="--fdelay:.1s; --fx:-80px; --fy:0px; --fdur:.9s"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3" />
+      </svg>
+      <svg class="corner-deco corner-bl reveal" style="--fdelay:.25s; --fx:-80px; --fy:0px; --fdur:.9s"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <ellipse cx="12" cy="5" rx="8" ry="3" />
+        <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5" />
+        <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3" />
+      </svg>
+      <svg class="corner-deco corner-tr reveal" style="--fdelay:.15s; --fx:80px; --fy:0px; --fdur:.9s"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z" />
+      </svg>
+      <svg class="corner-deco corner-br reveal" style="--fdelay:.3s; --fx:80px; --fy:0px; --fdur:.9s"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+      </svg>
+
+      <div class="about-inner">
+        <div class="about-top">
+          <h2 class="section-heading hero-heading reveal" style="--fy:40px">About me</h2>
+          <p class="about-text" id="about-text">My name is Manikka Karthik M. I am a B.Tech Information Technology student and web developer interested in building modern web applications, full-stack development and cybersecurity.</p>
+        </div>
+        <button class="btn-contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- SKILLS (services template) -->
+    <section class="services-section" id="skills">
+      <div class="skills-bg" aria-hidden="true">
+        <canvas id="skills-canvas" class="skills-canvas"></canvas>
+        <div class="skills-bg-glow"></div>
+        <div class="skills-bg-grid"></div>
+        <div class="skills-watermark">CAPABILITIES</div>
+        <div class="skills-tag skills-tag-tl mono">[ TECH.STACK // 2026 ]</div>
+        <div class="skills-tag skills-tag-tr mono">[ CORE.SKILLS // 01-05 ]</div>
+        <div class="skills-tag skills-tag-bl mono">[ SECURED &bull; SCALABLE ]</div>
+        <div class="skills-tag skills-tag-br mono">[ ARCHITECTURE ]</div>
+      </div>
+
+      <h2 class="services-heading">Skills</h2>
+      <div class="services-list" id="services-list"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+      <div class="projects-bg" aria-hidden="true">
+        <canvas id="projects-canvas" class="projects-canvas"></canvas>
+        <div class="projects-bg-glow"></div>
+        <div class="projects-bg-grid"></div>
+        <div class="projects-watermark">ARCHIVES</div>
+        <div class="projects-tag projects-tag-tl mono">[ SYSTEM.ARCHIVES // 2026 ]</div>
+        <div class="projects-tag projects-tag-tr mono">[ PROD.BUILDS // ACTIVE ]</div>
+        <div class="projects-tag projects-tag-bl mono">[ SECURED &bull; VERIFIED DEPLOYMENTS ]</div>
+        <div class="projects-tag projects-tag-br mono">[ 01 &mdash; 03 // FULLSTACK &amp; CYBER ]</div>
+      </div>
+
+      <h2 class="section-heading hero-heading projects-heading reveal" style="--fy:40px">Projects</h2>
+      <div class="projects-list" id="projects-list"></div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-header reveal" style="--fy:30px">
+          <h2 class="section-heading hero-heading">Let’s Connect</h2>
+          <p class="contact-subtitle">Have a project in mind, an opportunity, or want to talk cybersecurity &amp;
+            full-stack development? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Channels & Status -->
+          <div class="contact-info-panel reveal" style="--fdelay:.15s; --fy:30px">
+            <div>
+              <div class="status-badge mono">
+                <span class="status-pulse"></span>AVAILABLE FOR ROLES &amp; FREELANCE
+              </div>
+              <h3 style="color:#D7E2EA; font-size:1.6rem; font-weight:700; margin-top:20px; line-height:1.2;">Building
+                Secure &amp; Scalable Systems</h3>
+              <p style="color:rgba(215,226,234,0.65); font-size:0.95rem; margin-top:10px; line-height:1.6;">
+                Passionate about end-to-end web architecture, reliable databases, and proactive application security.
+                Reach out via email or connect through my handles.
+              </p>
+            </div>
+
+            <div class="contact-channels">
+              <a href="mailto:manikkakarthik12@gmail.com" class="channel-item" id="contact-email-link">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label mono">Email</span>
+                  <span class="channel-val">manikkakarthik12@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label mono">GitHub</span>
+                  <span class="channel-val">https://github.com/MANIKKAKARTHIK</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label mono">LinkedIn</span>
+                  <span class="channel-val">https://www.linkedin.com/in/manikka-karthik-187862435</span>
+                </div>
+              </a>
+
+              <div class="channel-item" style="cursor:default;">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label mono">Location</span>
+                  <span class="channel-val">Madurai,Tamil Nadu, India &bull; Remote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Terminal Contact Form -->
+          <div class="contact-form-card reveal" style="--fdelay:.25s; --fy:30px">
+            <div class="form-terminal-bar mono">
+              <div class="terminal-dots">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+              </div>
+              <span class="terminal-title">karthik@sec-ops:~$ ./send-message.sh</span>
+            </div>
+
+            <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); submitContactForm();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name" class="mono">Your Name</label>
+                  <input type="text" id="c-name" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+                </div>
+                <div class="form-group">
+                  <label for="c-email" class="mono">Your Email</label>
+                  <input type="email" id="c-email" name="email" class="form-input" placeholder="alex@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-subject" class="mono">Subject</label>
+                <input type="text" id="c-subject" name="subject" class="form-input" placeholder="Project Inquiry / Job Opportunity"
+                  required />
+              </div>
+
+              <div class="form-group">
+                <label for="c-message" class="mono">Message</label>
+                <textarea id="c-message" name="message" class="form-textarea"
+                  placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-contact" id="btn-submit">Transmit Message &rarr;</button>
+              <div class="form-status-msg mono" id="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="footer-left">
+            <span>&copy; 2026 Karthik. All rights reserved.</span>
+          </div>
+          <button type="button" class="btn-back-to-top mono" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            Back to Top &uarr;
+          </button>
+        </footer>
+      </div>
+    </section>
+
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

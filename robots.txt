@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manikkakarthik.github.io/manikka-karthik-portfolio/sitemap.xml
